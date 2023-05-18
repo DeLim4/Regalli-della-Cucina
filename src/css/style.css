@@ -1,0 +1,103 @@
+.header {
+    overflow: hidden;
+    margin: auto;
+    width: 90%;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.menu {
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 50px 0 50px 0;
+    border: solid white 1px;
+   
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+li {
+    display: inline-block;
+    margin: 15px auto;
+}
+
+
+nav{position: sticky;
+    top: 0px;}
+nav li a:hover {
+
+    color: #daa520;
+}
+
+
+
+.fundo-video {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#burguer{display: none;
+}
+
+
+.logo {
+
+    margin-top: 150px;
+    text-align: center;
+    
+}
+
+#regalipng {
+    width: 50%;
+}
+
+a {
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #daa520;
+    transition: width .5s;
+}
+
+a:hover:before {
+    width: 100%;
+}
+
+
+
+
+
